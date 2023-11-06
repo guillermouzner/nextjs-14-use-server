@@ -9,7 +9,7 @@ export default function HomePage() {
           <Link href="/post/1">* Test Post</Link>
         </li>
         <li>
-          <Link href="/post/2">* Second Test Post</Link>
+          <Link href="/auth">* Cookies auth</Link>
         </li>
       </ul>
     </main>

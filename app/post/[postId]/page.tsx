@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {revalidatePath} from "next/cache";
+import {redirect} from "next/navigation";
 
 import {db} from "@/lib/db";
 import {RefreshCache} from "@/components/refresh-cache";
@@ -26,7 +27,9 @@ export default async function PostPage({params}: {params: {postId: string}}) {
     const didChange = postLastUpdated !== checkIfPostLastUpdated;
 
     if (didChange) {
-      revalidatePath("/");
+      revalidatePath("/login");
+
+      return redirect("login");
     }
 
     console.log("didChange?", didChange);
