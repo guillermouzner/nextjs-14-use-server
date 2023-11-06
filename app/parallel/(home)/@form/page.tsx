@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export default async function FormPage() {
-  const loadTime = 10000;
+  const loadTime = 5000;
 
   await sleep(loadTime);
 
