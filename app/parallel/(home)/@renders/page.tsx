@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 export default async function RendersPage() {
-  const loadTime = 9900;
+  const loadTime = 5900;
 
   await sleep(loadTime);
 
