@@ -6,7 +6,7 @@ export default async function FormPage() {
   await sleep(loadTime);
 
   return (
-    <div>
+    <div className="text-2xl font-bold tracking-tighter">
       <div>Form Page loaded after {loadTime}ms</div>
     </div>
   );
